@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>AI SuperApp Chat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI SuperApp</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🌐 AI SuperApp</h1>
-  <p>Your all-in-one assistant for everything: daily tasks, study, job, health, and income tools.</p>
+  <div class="chat-container" id="chat-container">
+    <!-- Chat messages will go here -->
+  </div>
 
-  <input type="text" id="input" placeholder="Ask anything...">
-  <button onclick="askAI()">Ask</button>
-
-  <div id="output"></div>
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your message..." onkeydown="if(event.key === 'Enter') askAI()">
+    <button onclick="askAI()">Send</button>
+  </div>
 
   <script src="app.js"></script>
 </body>
