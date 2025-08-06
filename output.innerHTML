@@ -1,0 +1,12 @@
+function askAI() {
+  const input = document.getElementById('input').value;
+  const output = document.getElementById('output');
+
+  if (input.toLowerCase().includes('code')) {
+    output.innerHTML = "🧠 AI is generating code based on your project idea...";
+  } else if (input.toLowerCase().includes('app') || input.toLowerCase().includes('website')) {
+    output.innerHTML = "🌐 AI will help you build a website or app!";
+  } else {
+    output.innerHTML = "🤖 This AI can help with daily tasks, studies, jobs, and more!";
+  }
+}
